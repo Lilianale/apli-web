@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #a8e7da;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  background-color: #414746;
+}
+
+th, td {
+  border: 1px solid #f3f5f5;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ec76c9;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
