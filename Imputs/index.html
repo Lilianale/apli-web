@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario HTML</title>
+  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="mb-4">Formulario Imputs</h2>
+    <form action="server.php" method="POST" enctype="multipart/form-data" class="form-container">
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="emailInput" class="form-label">Correo</label>
+          <input type="email" name="email" id="emailInput" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="urlInput" class="form-label">Link</label>
+          <input type="url" name="url" id="urlInput" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="telInput" class="form-label">Teléfono</label>
+          <input type="tel" name="tel" id="telInput" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="numberInput" class="form-label">Número</label>
+          <input type="number" name="number" id="numberInput" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="dateInput" class="form-label">Fecha</label>
+          <input type="date" name="date" id="dateInput" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="timeInput" class="form-label">Hora</label>
+          <input type="time" name="time" id="timeInput" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="datetimeInput" class="form-label">Fecha y hora</label>
+          <input type="datetime-local" name="datetime" id="datetimeInput" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="monthInput" class="form-label">Mes</label>
+          <input type="month" name="month" id="monthInput" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="weekInput" class="form-label">Semana</label>
+          <input type="week" name="week" id="weekInput" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="passwordInput" class="form-label">Contraseña</label>
+          <input type="password" name="password" id="passwordInput" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="searchInput" class="form-label">Buscar</label>
+          <input type="search" name="search" id="searchInput" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="fileInput" class="form-label">Documento</label>
+          <input type="file" name="file" id="fileInput" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="selectInput" class="form-label">Pelicula favorita</label>
+          <select name="select" id="selectInput" class="form-select">
+            <option value="">Selecciona una</option>
+            <option value="1">Barbie</option>
+            <option value="2">Bob sponja</option>
+            <option value="3">Spiderman</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="textInput" class="form-label">¿Como te sientes?</label>
+          <input type="text" name="text" id="textInput" class="form-control">
+        </div>
+      </div>
+
+            <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Estado de Ánimo</label><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="estado_animo" value="feliz" id="animoFeliz" class="form-check-input">
+            <label for="animoFeliz" class="form-check-label">Feliz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="estado_animo" value="triste" id="animoTriste" class="form-check-input">
+            <label for="animoTriste" class="form-check-label">Triste</label>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="colorPreferidoInput" class="form-label">Color Preferido</label>
+          <input type="color" name="color_preferido" id="colorPreferidoInput" class="form-control form-control-color">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="rangeInput" class="form-label">¿Cuanto te gusta las golosinas?</label>
+          <input type="range" name="range" id="rangeInput" class="form-range">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="textareaInput" class="form-label">Describe tu personalidad</label>
+        <textarea name="textarea" id="textareaInput" class="form-control" rows="3"></textarea>
+      </div>
+
+      <div class="form-check mb-3">
+        <input type="checkbox" name="checkbox" class="form-check-input" id="check1">
+        <label for="check1" class="form-check-label">Aceptar términos</label>
+      </div>
+
+      <input type="hidden" name="hiddenField" value="oculto">
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
+        <button type="button" class="btn btn-info" onclick="alert('Hola')">Botón</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
